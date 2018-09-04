@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuc hanh cau truc dieu kien Switch case</title>
+</head>
+<body>
+<h3>Hay nhap vao ten trinh duyet internet cua ban</h3>
+<input type="text" id="nameBrowser">
+<input type="button" value="Submit" onclick="d_browser()">
+<script>
+    function d_browser() {
+        var browser = document.getElementById("nameBrowser").value;
+        switch (browser) {
+            case "Edge":
+                alert("You've got the Edge!");
+                break;
+            case "Chrome":
+            case "Firefox":
+            case "Safari":
+            case "Opera":
+                alert("Okay we support these browsers too");
+                break;
+            default:
+                alert("We hope that this page looks ok!");
+        }
+    }
+</script>
+</body>
+</html>

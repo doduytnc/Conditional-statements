@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game doan so</title>
+</head>
+<body>
+<button type="button">PLAY</button>
+<script>
+var a,b,c,d,e;
+alert("Ban hay chon khoang so muon doan");
+a = parseInt(prompt("Tu so"));
+b = parseInt(prompt("den so"));
+c = Math.floor(Math.random() * (b - a) +a);
+alert(c);
+d = parseInt(prompt("Hay nhap so ban doan"));
+    if (d === c) {
+        alert("Ban da doan chinh xac!");
+    } else {
+        for (i = 1; i <=3; i++)
+        {
+            e = parseInt(prompt("Ban hay doan lai"));
+            if (e === c) {
+                alert("Ban da doan chinh xac");
+            } else {
+                alert("Ban da doan sai")
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

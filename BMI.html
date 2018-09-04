@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI index</title>
+</head>
+<body>
+<script>
+    var weight = prompt("Enter weight (kg) ");
+    var height = prompt("Height (m) ");
+    var bmi;
+    bmi = weight/(height*height);
+    if (bmi < 18.5) {
+        alert("You are underweight");
+    } else {
+        if (bmi < 24.9) {
+            alert("You are normal");
+        } else {
+            if (bmi < 29.9) {
+                alert("You are overweight");
+
+                }
+                else {
+                    alert("You are obese")
+            }
+        }
+    }
+</script>
+</body>
+</html>
